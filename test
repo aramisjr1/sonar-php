@@ -1,0 +1,18 @@
+<?php
+$loc_id = $_Get ['location'];
+
+$query = "SELECT * from locations where ID = '$loc_id'";
+c
+if (! $mysqli->query($query)) {
+            printf("Error: %s\n", $mysql->error);
+            print_r($query);
+#
+     }
+
+if ($result = $mysql->query($query)) {
+   /* fetch associative array */
+   while ($row = $result->fetch_assoc()) {
+        printf ("%s %s/n", $row["ID"], $row["City"]
+   }
+
+?>
